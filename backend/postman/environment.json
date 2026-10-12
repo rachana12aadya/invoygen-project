@@ -1,0 +1,10 @@
+{
+  "id": "invoygen-local",
+  "name": "invoygen local",
+  "values": [
+    { "key": "baseUrl", "value": "http://localhost:5000", "enabled": true },
+    { "key": "api", "value": "{{baseUrl}}/api/v1", "enabled": true },
+    { "key": "accessToken", "value": "", "enabled": true },
+    { "key": "invoiceId", "value": "", "enabled": true }
+  ]
+}

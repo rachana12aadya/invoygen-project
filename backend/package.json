@@ -1,0 +1,19 @@
+{
+  "name": "invoygen-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "invoygen API: invoice generation backend",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "jest --runInBand --forceExit",
+    "test:watch": "jest --watch --runInBand",
+    "audit": "npm audit --audit-level=high"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

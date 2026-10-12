@@ -1,0 +1,15 @@
+process.env.NODE_ENV = 'test';
+process.env.PORT = '5000';
+process.env.MONGODB_URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017/invoygen-test';
+process.env.JWT_ACCESS_SECRET = 'test-access-secret-must-be-at-least-64-characters-long-xxxx';
+process.env.JWT_REFRESH_SECRET = 'test-refresh-secret-must-be-at-least-64-characters-long-xxx';
+process.env.JWT_ACCESS_EXPIRES = '15m';
+process.env.JWT_REFRESH_EXPIRES = '7d';
+process.env.FRONTEND_URL = 'http://localhost:3000';
+process.env.CORS_ORIGINS = 'http://localhost:3000';
+process.env.SMTP_HOST = 'localhost';
+process.env.SMTP_PORT = '1025';
+process.env.SMTP_USER = 'test';
+process.env.SMTP_PASS = 'test';
+process.env.EMAIL_FROM = 'invoygen <no-reply@example.com>';
+process.env.CONTACT_INBOX = 'founder@example.com';
